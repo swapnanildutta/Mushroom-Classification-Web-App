@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: matplotlib
+    versions:
+    - 3.4.0
+  - dependency-name: streamlit
+    versions:
+    - 0.77.0
+    - 0.78.0
